@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+<title>Planes Above Me</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script></script>
+<body>
+<h2 class="main-title">Planes Above Me</h2>
+<div id="graph1"></div><br>
+<div id="othergraphs">
+<div id="bar">
+<h1>Weekly Departures</h1>
+</div>
+
+<div id="bar2" style="float:right; text-align:right;">
+<h1>Weekly Arrivals</h1>
+</div>
+</div>
+
+<div id="weekGraph">
+<br><br>
+<h1>Days of the week</h1>
+<br>
+</div>
+
+<div id="hourGraph">
+<br>
+<h1>Hours of the day</h1>
+<br>
+</div>
+
+<div id="othergraphs2">
+<br>
+<h1>Most common letters and numbers in flight numbers</h1>
+<br>
+<br>
+</div>
+
+
+<div class="legenda">
+<span class="legenda-item">
+  <h3>AMS</h3>
+  <h5>Amsterdam Schiphol</h5>
+</span>
+<span class="legenda-item">
+  <h3>BCN</h3>
+  <h5>Barcelona-El Prat</h5>
+</span>
+<span class="legenda-item">
+  <h3>BHX</h3>
+  <h5>Birmingham International</h5>
+</span>
+<span class="legenda-item">
+  <h3>BRU</h3>
+  <h5>Brussels Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>BUD</h3>
+  <h5>Budapest Ferenc Liszt</h5>
+</span>
+<span class="legenda-item">
+  <h3>CDG</h3>
+  <h5>Paris Charles de Gaulle </h5>
+</span>
+<span class="legenda-item">
+  <h3>CGN</h3>
+  <h5>Cologne Bonn Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>CPH</h3>
+  <h5>Copenhagen Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>DUS</h3>
+  <h5>Düsseldorf Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>DXB</h3>
+  <h5>Dubai International</h5>
+</span>
+<span class="legenda-item">
+  <h3>FRA</h3>
+  <h5>Frankfurt Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>HAM</h3>
+  <h5>Hamburg Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>HEL</h3>
+  <h5>Helsinki Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>IST</h3>
+  <h5>Istanbul Atatürk</h5>
+</span>
+<span class="legenda-item">
+  <h3>LGW</h3>
+  <h5>Gatwick Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>LHR</h3>
+  <h5>London Heathrow</h5>
+</span>
+<span class="legenda-item">
+  <h3>LIS</h3>
+  <h5>Lisbon Portela Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>LPA</h3>
+  <h5>Gran Canaria Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>MAN</h3>
+  <h5>Manchester Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>MUC</h3>
+  <h5>Munich Airport</h5>
+</span>
+<span class="legenda-item">
+  <h3>STN</h3>
+  <h5>London Stansted</h5>
+</span>
+
+</div>
+<br>
+<footer>
+  This Data was collected over a period of seven days starting on the 26th of november in the year 2013.
+  It was downloaded from <a href="http://www.flightradar24.com/">http://www.flightradar24.com/</a> every 15 seconds and stored in a database at <a href="http://hidden-ocean-1268.herokuapp.com">http://hidden-ocean-1268.herokuapp.com</a>. <br>
+  <a href="http://bartvi.be>">&#169;Bart Van Itterbeeck - 2013</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

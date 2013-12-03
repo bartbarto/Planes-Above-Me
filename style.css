@@ -1,0 +1,148 @@
+body,html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Comic Sans MS", cursive;*/
+  margin:0;
+  padding:0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.chord path {
+  fill-opacity: .67;
+  stroke: #000;
+  stroke-width: .5px;
+  stroke-opacity: .2;
+}
+#graph1{
+  position: absolute;
+  left: 50%;
+  margin-left: -300px;
+  margin-right: auto;
+
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 220s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+#othergraphs{
+  margin-top: 620px;
+  padding: 50px;
+}
+
+#othergraphs2{
+  padding: 50px;
+}
+#othergraphs2 svg rect:hover{
+  opacity: .8;
+}
+
+#weekGraph{
+  margin-top: 650px;
+  padding: 50px;
+  padding-bottom: 10px;
+}
+#weekGraph rect:hover{
+  opacity: .8;
+}
+
+#hourGraph{
+  padding: 50px;
+  padding-bottom: 10px;
+}
+#hourGraph rect:hover{
+  opacity: .8;
+}
+
+#bar{
+  position: absolute;
+}
+
+#bar2{
+  position: absolute;
+  right: 50px;
+}
+#bar svg rect:hover, #bar2 svg rect{
+  transition: fill 0.2s;
+}
+#bar svg rect:hover{
+  fill:#466FA6;
+}
+
+#bar2 svg rect:hover{
+  fill:#466FA6;
+}
+
+.main-title{
+  text-align: center;
+  font-size: 54pt;
+  margin-bottom: 20px;
+}
+
+.tooltip{
+  color:red;
+  width:200px;
+  height: 200px;
+  background: green;
+}
+
+.legenda{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.legenda-item{
+  width: 14%;
+  float: left;
+  text-align: center;
+  min-width: 150px;
+  overflow: hidden;
+}
+
+.legenda-item h3{
+  font-size: 4em;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+.legenda-item h5{
+  font-size: 1em;
+  font-weight: 200;
+  margin-top: 0px;
+}
+
+footer{
+  display: block;
+  padding: 50px 0 5px 0;
+  width: 800px;
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+  text-align: center;
+}
+footer a{
+  color:#7DB9FE;
+  text-decoration: none;
+}
+
+svg text{
+  color:white;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
